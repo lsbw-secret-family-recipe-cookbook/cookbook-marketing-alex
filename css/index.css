@@ -223,3 +223,13 @@ nav h1 {
   width: 50%;
   padding: 25px;
 }
+.container footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container footer a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
