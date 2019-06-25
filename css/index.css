@@ -199,4 +199,27 @@ nav h1 {
 .container .mainimg .mainText {
   width: 250px;
   padding-top: 70px;
+  text-align: center;
+}
+.container .divinder {
+  border-top: 2px dotted black;
+}
+.container .mainFeat {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container .mainFeat .bulletPoints {
+  padding: 40px 20px 40px 40px;
+  align-items: center;
+  width: 50%;
+  font-size: 20px;
+  align-content: center;
+}
+.container .mainFeat .bulletPoints ol {
+  list-style: disc;
+  line-height: 200%;
+}
+.container .mainFeat .appScreens {
+  width: 50%;
+  padding: 25px;
 }
