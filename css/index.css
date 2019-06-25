@@ -172,6 +172,7 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
+  padding-bottom: 15px;
 }
 nav a {
   padding-top: 5px;
@@ -230,15 +231,47 @@ nav h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 25px;
+  border: 1px dashed black;
   height: 300px;
 }
 .container .card img {
   width: 200px;
   height: 200px;
+  padding-top: 20px;
 }
 .container .card p {
-  width: 30%;
+  padding-top: 12px;
+}
+.container .card .text {
+  width: 70%;
+  padding: 20px;
+}
+.container .card .img {
+  width: 25%;
+}
+.container .card .github {
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px;
+  border: 1px solid #333;
+}
+.container .card .twitter {
+  background-color: #1da1f2;
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px;
+  border: 1px solid #1da1f2;
+}
+.container .card .email {
+  background-color: #6441a5;
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px;
+  border: 1px solid #6441a5;
+}
+.container .card button {
+  width: 32%;
 }
 .container footer {
   display: flex;
