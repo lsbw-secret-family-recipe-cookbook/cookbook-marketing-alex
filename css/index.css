@@ -179,6 +179,9 @@ nav a {
   text-decoration: none;
   color: black;
 }
+nav a .selected {
+  font-weight: 800;
+}
 nav h1 {
   font-size: 30px;
   width: 50%;
@@ -222,6 +225,20 @@ nav h1 {
 .container .mainFeat .appScreens {
   width: 50%;
   padding: 25px;
+}
+.container .card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 25px;
+  height: 300px;
+}
+.container .card img {
+  width: 200px;
+  height: 200px;
+}
+.container .card p {
+  width: 30%;
 }
 .container footer {
   display: flex;
