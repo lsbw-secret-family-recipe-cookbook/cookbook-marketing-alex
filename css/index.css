@@ -205,6 +205,15 @@ nav h1 {
   padding-top: 70px;
   text-align: center;
 }
+@media (max-width:500px) {
+  .container .mainimg .mainText {
+    padding: 10px;
+    width: 100%;
+  }
+  .container .mainimg .wholesome {
+    padding-bottom: 0px;
+  }
+}
 .container .divinder {
   border-top: 2px dotted black;
 }
@@ -223,16 +232,29 @@ nav h1 {
   list-style: disc;
   line-height: 200%;
 }
+@media (max-width:500px) {
+  .container .mainFeat .bulletPoints {
+    width: 100%;
+  }
+  .container .mainFeat .bulletPoints h2 {
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+  }
+}
 .container .mainFeat .appScreens {
   width: 50%;
   padding: 25px;
+}
+@media (max-width:500px) {
+  .container .mainFeat .appScreens {
+    display: none;
+  }
 }
 .container .card {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   border: 1px dashed black;
-  height: 300px;
 }
 .container .card img {
   width: 200px;
@@ -272,6 +294,15 @@ nav h1 {
 }
 .container .card button {
   width: 32%;
+}
+@media (max-width:500px) {
+  .container .card {
+    flex-flow: column;
+    align-items: center;
+  }
+  .container .card .img {
+    width: 50%;
+  }
 }
 .container footer {
   display: flex;

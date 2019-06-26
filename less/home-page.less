@@ -14,7 +14,20 @@
             padding-top:70px;
             text-align: center; 
         }
+        @media @phone{
+       .mainText{
+           padding:10px;
+           width:100%;
+       }
+       .wholesome{
+           padding-bottom:0px;
+       }
     }
+        
+    }
+    
+    
+    
     .divinder{
         border-top:2px dotted black;
     }
@@ -33,10 +46,25 @@
             }
             
         }
+        @media @phone{
+            .bulletPoints{
+                width:100%;
+                //padding:10px 10px 10px 40px;
+                h2{
+                    padding:0px 10px 10px 10px;
+                    text-align:center;
+                }
+            }
+        }
         .appScreens{
             width:50%;
             padding:25px;
             
+        }
+        @media @phone{
+            .appScreens{
+                display:none;
+            }
         }
     }
     .card{
@@ -44,7 +72,6 @@
         flex-flow:row wrap;
         justify-content: center;
         border:1px dashed black;
-        height:300px;
         img{
             width:200px;
             height:200px;
@@ -86,6 +113,15 @@
             
         }
 
+    }
+    @media @phone{
+        .card{
+            flex-flow:column;
+            align-items: center;
+            .img{
+                width:50%;
+            }
+        }
     }
     footer{
         display:flex;
