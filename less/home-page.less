@@ -1,9 +1,15 @@
+.outter{
+    background-color:@pri;
+    height:100%;
+}
 .container{
     max-width: 800px;
     border: 1px solid black;
+    background-color: @tri;
     .mainimg{
         display: flex;
         flex-flow:row wrap;
+        background-color:@tri;
         .wholesome{
             width:500px;
             height:300px;           
@@ -14,15 +20,6 @@
             padding-top:70px;
             text-align: center; 
         }
-        @media @phone{
-       .mainText{
-           padding:10px;
-           width:100%;
-       }
-       .wholesome{
-           padding-bottom:0px;
-       }
-    }
         @media @tablet{
             .wholesome{
                 width:70%;
@@ -33,11 +30,28 @@
         }
         
     }
+    @media @phone{
+        .mainImg{
+            flex-flow:column;
+            .wholesome{
+                width:100%;
+                padding:10px;
+            }
+            .mainText{
+                align-items: center;
+                width:100%;
+                padding:10px;
+            }
+        }
+    }
     .tab-navigator {
+        background-color:@tri;
     .tab-links {
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
+      font-size:20px;
+
 
       .link {
         padding: 20px 40px;
@@ -48,17 +62,27 @@
         margin:10px;
       }
     }
+    @media @phone{
+        .tab-links{
+            flex-flow:column;
+        }
+    }
+    @media @tablet{
+        .tab-links{
+            flex-flow:column;
+
+        }
+    }
     .tab-content {
       width: 100%;
       margin-top: 20px;
-      background-color:coral;
+      background-color:@tri;
 
       .content {
         padding: 20px;
         border: 1px solid black;
         display: none;
       }
-
       .change {
         display: block;
       }
@@ -71,6 +95,7 @@
     .mainFeat{
         display:flex;
         flex-flow:row wrap;
+        background-color:@tri;
         .bulletPoints{
             padding:40px 20px 40px 40px;
             align-items: center;
@@ -109,6 +134,7 @@
         flex-flow:row wrap;
         justify-content: center;
         border:1px dashed black;
+        background-color:@tri;
         img{
             width:200px;
             height:200px;
@@ -149,7 +175,19 @@
         }
         button{
             width:32%;
+             transition-duration: 0.4s;
+             cursor: pointer;
         }
+        .github:hover{
+            border-radius:9px 0px 9px 0px;
+        }
+        .twitter:hover{
+            border-radius:9px 0px 9px 0px;
+        }
+        .email:hover{
+            border-radius:9px 0px 9px 0px;
+        }
+        
 
 
     }
@@ -162,14 +200,5 @@
             }
         }
     }
-    footer{
-        display:flex;
-        justify-content: space-evenly;
-        a{
-            font-size:15px;
-            text-decoration:none;
-            color:black;
-            padding:20px;
-        }
-    }
+    
 }

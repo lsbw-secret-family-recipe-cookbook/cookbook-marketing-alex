@@ -173,6 +173,7 @@ nav {
   justify-content: space-around;
   flex-flow: row wrap;
   padding-bottom: 15px;
+  background-color: #AAE4EC;
 }
 nav a {
   padding-top: 5px;
@@ -187,13 +188,30 @@ nav h1 {
   font-size: 30px;
   width: 50%;
 }
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #AAE4EC;
+}
+footer a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+.outter {
+  background-color: #136b72;
+  height: 100%;
+}
 .container {
   max-width: 800px;
   border: 1px solid black;
+  background-color: #D8E4DA;
 }
 .container .mainimg {
   display: flex;
   flex-flow: row wrap;
+  background-color: #D8E4DA;
 }
 .container .mainimg .wholesome {
   width: 500px;
@@ -205,15 +223,6 @@ nav h1 {
   padding-top: 70px;
   text-align: center;
 }
-@media (max-width:500px) {
-  .container .mainimg .mainText {
-    padding: 10px;
-    width: 100%;
-  }
-  .container .mainimg .wholesome {
-    padding-bottom: 0px;
-  }
-}
 @media (max-width:800px) {
   .container .mainimg .wholesome {
     width: 70%;
@@ -222,10 +231,28 @@ nav h1 {
     width: 20%;
   }
 }
+@media (max-width:500px) {
+  .container .mainImg {
+    flex-flow: column;
+  }
+  .container .mainImg .wholesome {
+    width: 100%;
+    padding: 10px;
+  }
+  .container .mainImg .mainText {
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+}
+.container .tab-navigator {
+  background-color: #D8E4DA;
+}
 .container .tab-navigator .tab-links {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 .container .tab-navigator .tab-links .link {
   padding: 20px 40px;
@@ -235,10 +262,20 @@ nav h1 {
   border-radius: 8px 0px 8px 0px;
   margin: 10px;
 }
+@media (max-width:500px) {
+  .container .tab-navigator .tab-links {
+    flex-flow: column;
+  }
+}
+@media (max-width:800px) {
+  .container .tab-navigator .tab-links {
+    flex-flow: column;
+  }
+}
 .container .tab-navigator .tab-content {
   width: 100%;
   margin-top: 20px;
-  background-color: coral;
+  background-color: #D8E4DA;
 }
 .container .tab-navigator .tab-content .content {
   padding: 20px;
@@ -254,6 +291,7 @@ nav h1 {
 .container .mainFeat {
   display: flex;
   flex-flow: row wrap;
+  background-color: #D8E4DA;
 }
 .container .mainFeat .bulletPoints {
   padding: 40px 20px 40px 40px;
@@ -289,6 +327,7 @@ nav h1 {
   flex-flow: row wrap;
   justify-content: center;
   border: 1px dashed black;
+  background-color: #D8E4DA;
 }
 .container .card img {
   width: 200px;
@@ -330,6 +369,17 @@ nav h1 {
 }
 .container .card button {
   width: 32%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.container .card .github:hover {
+  border-radius: 9px 0px 9px 0px;
+}
+.container .card .twitter:hover {
+  border-radius: 9px 0px 9px 0px;
+}
+.container .card .email:hover {
+  border-radius: 9px 0px 9px 0px;
 }
 @media (max-width:500px) {
   .container .card {
@@ -339,16 +389,6 @@ nav h1 {
   .container .card .img {
     width: 50%;
   }
-}
-.container footer {
-  display: flex;
-  justify-content: space-evenly;
-}
-.container footer a {
-  font-size: 15px;
-  text-decoration: none;
-  color: black;
-  padding: 20px;
 }
 @font-face {
   font-family: 'Lora';
