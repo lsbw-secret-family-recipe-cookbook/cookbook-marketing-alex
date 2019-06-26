@@ -214,6 +214,40 @@ nav h1 {
     padding-bottom: 0px;
   }
 }
+@media (max-width:800px) {
+  .container .mainimg .wholesome {
+    width: 70%;
+  }
+  .container .mainimg .mainText {
+    width: 20%;
+  }
+}
+.container .tab-navigator .tab-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .tab-navigator .tab-links .link {
+  padding: 20px 40px;
+  background: lightgray;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 8px 0px 8px 0px;
+  margin: 10px;
+}
+.container .tab-navigator .tab-content {
+  width: 100%;
+  margin-top: 20px;
+  background-color: coral;
+}
+.container .tab-navigator .tab-content .content {
+  padding: 20px;
+  border: 1px solid black;
+  display: none;
+}
+.container .tab-navigator .tab-content .change {
+  display: block;
+}
 .container .divinder {
   border-top: 2px dotted black;
 }
@@ -260,9 +294,11 @@ nav h1 {
   width: 200px;
   height: 200px;
   padding-top: 20px;
+  box-shadow: 2.5px 5px;
 }
 .container .card p {
   padding-top: 12px;
+  box-shadow: 2.5px 4px;
 }
 .container .card .text {
   width: 70%;

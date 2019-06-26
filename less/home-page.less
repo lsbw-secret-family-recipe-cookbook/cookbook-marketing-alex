@@ -23,10 +23,47 @@
            padding-bottom:0px;
        }
     }
+        @media @tablet{
+            .wholesome{
+                width:70%;
+            }
+            .mainText{
+                width:20%;
+            }
+        }
         
     }
-    
-    
+    .tab-navigator {
+    .tab-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .link {
+        padding: 20px 40px;
+        background: lightgray;
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 8px 0px 8px 0px;
+        margin:10px;
+      }
+    }
+    .tab-content {
+      width: 100%;
+      margin-top: 20px;
+      background-color:coral;
+
+      .content {
+        padding: 20px;
+        border: 1px solid black;
+        display: none;
+      }
+
+      .change {
+        display: block;
+      }
+    }
+  }// tab navigator
     
     .divinder{
         border-top:2px dotted black;
@@ -76,9 +113,11 @@
             width:200px;
             height:200px;
             padding-top:20px;
+            box-shadow:2.5px 5px;
         }
         p{
             padding-top:12px;
+            box-shadow:2.5px 4px;
         }
         .text{
             width:70%;
@@ -110,8 +149,8 @@
         }
         button{
             width:32%;
-            
         }
+
 
     }
     @media @phone{
