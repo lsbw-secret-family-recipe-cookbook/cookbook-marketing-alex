@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Lora', serif;
 }
 h1 {
   font-size: 4rem;
@@ -349,4 +349,11 @@ nav h1 {
   text-decoration: none;
   color: black;
   padding: 20px;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
 }
