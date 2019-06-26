@@ -174,6 +174,7 @@ nav {
   flex-flow: row wrap;
   padding-bottom: 15px;
   background-color: #AAE4EC;
+  padding-top: 10px;
 }
 nav a {
   padding-top: 5px;
@@ -214,12 +215,12 @@ footer a {
   background-color: #D8E4DA;
 }
 .container .mainimg .wholesome {
-  width: 500px;
+  width: 440px;
   height: 300px;
   padding: 25px;
 }
 .container .mainimg .mainText {
-  width: 250px;
+  width: 340px;
   padding-top: 70px;
   text-align: center;
 }
@@ -253,6 +254,7 @@ footer a {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  width: 100%;
 }
 .container .tab-navigator .tab-links .link {
   padding: 20px 40px;
@@ -261,6 +263,11 @@ footer a {
   cursor: pointer;
   border-radius: 8px 0px 8px 0px;
   margin: 10px;
+}
+.container .tab-navigator .link:active {
+  background-color: gray;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
 }
 @media (max-width:500px) {
   .container .tab-navigator .tab-links {
